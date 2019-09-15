@@ -1,0 +1,45 @@
+% configurable params 
+params.hog_cell_size = 4;
+params.fixed_area = 150^2                       % standard area to which we resize the target
+params.n_bins = 2^5                                 % number of bins for the color histograms (bg and fg models)
+params.lambda1 = 1e-3;      
+params.lambda_scale = 1e-3                         %  regularization weight
+params.lambda3 = 0.2;                                   % context weight
+params.lambda2 = 0.05;                                 % memory weight
+params.max_num_view=5;
+params.inner_padding = 0.2;                          % defines inner area used to sample colors from the foreground
+params.context_factor=3;                               % enlarge the bg_area to ct_area
+params.merge_factor = 0.3;                            % fixed interpolation factor - how to linearly combine the two responses
+
+% Parameters for learning
+params.learning_rate_pwp = 0.023;    %0.023\0.0225 on UAVDT\UAV123    % bg and fg color models learning rate 
+params.learning_rate_cf = 0.023;        %0.023\0.00801 on UAVDT\UAV123        % Hand-craft model learning rate
+params.weight_lr=0.026;                    %0.026\0.009  on UAVDT\UAV123          % Channel weight model learning rate
+
+
+% Parameters for scale filters
+params.learning_rate_scale = 0.02512; 
+params.scale_sigma_factor =0.65;
+params.num_scales =51;   
+params.scale_step = 1.0218;
+
+% Parameters for desired translation filter output
+params.output_sigma_factor = 0.035;             
+params.gaussian_var_view=1.16;       
+params.gaussian_var_first=1.28;
+params.gaussian_peak_view=0.75;
+params.gaussian_peak_first=0.75;
+
+
+% fixed setup
+params.hog_scale_cell_size = 4;                      
+params.scale_model_factor = 1.0;
+params.scale_model_max_area = 32*16;        %32*16
+params.feature_type = 'fhog&cn';                   %'fhog'   'fhog&cn'   'gray'
+params.grayscale_sequence = false;	             % suppose that sequence is colour
+params.merge_method = 'const_factor';
+params.den_per_channel = false;
+
+%% debugging stuff
+params.use_weight_channel=true;
+params.visualization =false;                               % show output bbox on frame
