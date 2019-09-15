@@ -1,7 +1,3 @@
----
-typora-root-url: results_OPE
----
-
 # Augmented Memory for Correlation Filters in Real-Time UAV Tracking 
 
 Matlab implementation of our Augmented Memory Correlation Filters (AMCF) tracker.
@@ -36,15 +32,15 @@ This code is compatible with UAV123 benchmark and UAVDT benchmark. Therefore, if
 
 ### UAV123@30fps
 
-![](/UAV123/error_OPE.png)
+![](\results_OPE\UAV123\error_OPE.png)
 
-![](/UAV123/overlap_OPE.png)
+![](\results_OPE\UAV123\overlap_OPE.png)
 
 ### UAVDT
 
-![](/UAVDT/error_OPE.png)
+![](\results_OPE\UAVDT\error_OPE.png)
 
-![](/UAVDT/overlap_OPE.png)
+![](\results_OPE\UAVDT\overlap_OPE.png)
 
 # Acknowledgements
 
