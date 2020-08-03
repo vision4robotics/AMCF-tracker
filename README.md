@@ -1,14 +1,14 @@
-# Augmented Memory for Correlation Filters in Real-Time UAV Tracking 
+# Augmented Memory for Correlation Filters in Real-Time UAV Tracking
 
 Matlab implementation of our Augmented Memory Correlation Filters (AMCF) tracker.
 
 # Abstract
 
-The outstanding computational efficiency of discriminative correlation filter (DCF) fades away with various complicated improvements. Previous appearances are also gradually forgotten due to the exponential decay of historical views in traditional appearance updating scheme of DCF framework, reducing the model's robustness. In this work, a novel tracker based on DCF framework is proposed to augment memory of previously appeared views while running at a real-time speed. Several historical views and the current view are simultaneously introduced in training to allow tracker to adapt to new appearances as well as memorize previous ones. A novel rapid compressive context learning is proposed to increase the discriminative ability of the filter efficiently. Substantial experiments on UAVDT and UAV123 datasets have validated that the proposed tracker performs competitively against other 26 top DCF and deep-based trackers with over 40 FPS on CPU.
+The outstanding computational efficiency of discriminative correlation filter (DCF) fades away with various complicated improvements. Previous appearances are also gradually forgotten due to the exponential decay of historical views in traditional appearance updating scheme of DCF framework, reducing the model’s robustness. In this work, a novel tracker based on DCF framework is proposed to augment memory of previously appeared views while running at real-time speed. Several historical views and the current view are simultaneously introduced in training to allow the tracker to adapt to new appearances as well as memorize previous ones. A novel rapid compressed context learning is proposed to increase the discriminative ability of the filter efficiently. Substantial experiments on UAVDT and UAV123 datasets have validated that the proposed tracker performs competitively against other 26 top DCF and deep-based trackers with over 40fps on CPU.
 
 # Publication
 
-AMCF tracker is proposed in our paper for ICRA 2020. Detailed explanation of our method can be found in the paper:
+AMCF tracker is proposed in our paper accepted by IROS 2020. Detailed explanation of our method can be found in the paper:
 
 Yiming Li, Changhong Fu, Fangqiang Ding, Ziyuan Huang, and Jia Pan.
 
