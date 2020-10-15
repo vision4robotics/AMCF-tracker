@@ -14,6 +14,23 @@ Yiming Li, Changhong Fu, Fangqiang Ding, Ziyuan Huang, and Jia Pan.
 
 Augmented Memory for Correlation Filters in Real-Time UAV Tracking.
 
+You can find this paper at: https://arxiv.org/abs/1909.10989.
+
+If you want to refer to this paper, please cite it as follows:
+
+@article{Li2019Augment,
+
+author = {Yiming Li and Changhong Fu and Fangqiang Ding and Ziyuan Huang and Jia Pan},
+
+title = {Augmented Memory for Correlation Filters in Real-Time UAV Tracking},
+
+year = {2019},
+
+journal = {arXiv:1909.10989}
+
+}
+
+
 # Contact
 
 Yiming Li
